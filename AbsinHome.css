@@ -26,6 +26,7 @@ body {
 }
 
 .links {
+  background-color: #000000;
   display: inline-block;
   margin-left: 20px;
   margin-top: 20px;
@@ -97,15 +98,89 @@ body {
 
 .ttimg {
   display: inline-block;
-  width: 560px;
+  width: 600px;
   height: 200px;
 }
 
+.bait {
+  width: 100%;
+  background-color: #000000;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  outline: 2px solid rgb(0, 255, 0);
+  text-align: center;
+
+}
+
+.baitcell {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: inline-block;
+  width: 19%;
+  outline: 2px solid rgb(0, 255, 0);
+}
+
+.baitpicture{
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  display: block;
+}
+
+.baittitle {
+  display: block;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 4px;
+  margin-bottom: 0px;
+  color: lime;
+  outline: 2px solid rgb(0, 255, 0);
+}
+
+.baittitle:hover {
+  color: rgb(0, 255, 221);
+  cursor: pointer;
+  animation-name: sublinks3;
+  animation-duration: 400ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
 .main {
+  position: relative;
   width: 75%;
   display:inline-block;
   outline: 2px solid rgb(0, 255, 0);
 }
+
+.feedbackground {
+  position: absolute;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+#feedbackground {
+  width: 100%;
+  height: 100%;
+  object-fit:scale-down;
+}
+
+
+.mainbg {
+  position: relative;
+  width: 90%;
+  height: 400px;
+  background-image: url(FeedBackground.png);
+  background-repeat: repeat-x;
+  z-index: 1;
+  outline: 2px solid rgb(0, 255, 0);
+}
+
 
 .box {
   margin-left: 13%;
@@ -115,10 +190,13 @@ body {
 
 .postholder{
   outline: 2px solid rgb(0, 255, 0);
+  background-color: #000000;
 }
 
 .posttitle{
   outline: 2px solid rgb(0, 255, 0);
+  background-color: #00271b;
+  color: rgb(255, 255, 255);
 }
 
 .posttitletext{
